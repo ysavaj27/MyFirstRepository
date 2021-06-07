@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/Screens/Edit_Product_Screen.dart';
 
-import 'ArgumentPass.dart';
-
 class UserProductItem extends StatelessWidget {
   final String id;
   final String title;
@@ -27,8 +25,6 @@ class UserProductItem extends StatelessWidget {
                 icon: Icon(Icons.edit),
                 onPressed: () {
                   Navigator.of(context)
-                      // .pushNamed(EditProductScreen.routeName, arguments: ArgumentPass(param1: id.toString(),
-                      // param2: title));
                       .pushNamed(EditProductScreen.routeName, arguments: id);
                 },
                 color: Theme.of(context).primaryColor,
